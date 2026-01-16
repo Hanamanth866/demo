@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ರುಚಿ ಊಟದಮನೆ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <!--Head section-->
+    <header>
+        <div class="logo - card">
+        <img src="/Yellow_and_Brown_Kitchen_Food_Logo-removebg-preview.png" alt="ರುಚಿ ಊಟದಮನೆ ಲೋಗೋ" href="#menu">
+        <div class="header1">
+        <h1>ರುಚಿ ಊಟದಮನೆ</h1>
+        <nav>
+            <a href="#about">ಮನೆ ಬಗ್ಗೆ</a>
+            <a href="#menu">ಮೆನು</a>
+            <a href="#order">Order</a>
+            <a href="#contact">ಸಂಪರ್ಕ</a>
+        </nav>
+        </div>
+        </div>
+    </header>
+
+    <!--About section-->
+   <div class="about-container" id="about">
+
+        <section class="left">
+            <h1><sapn class="highlight">ರುಚಿಕರವಾದ ಶುದ್ಧ ಸಾತ್ವಿಕ ಊಟ, ಪ್ರೀತಿ ಮತ್ತು ಸ್ವಚ್ಛತೆಯೊಂದಿಗೆ ಸಿದ್ಧಪಡಿಸುತ್ತೇವೆ.</sapn></h1>
+            <h4>
+                ನಮ್ಮ ಊಟದಮನೆಗೆ ಸ್ವಾಗತ! ಇಲ್ಲಿ ನೀವು ಆರೋಗ್ಯಕರ, ಸಾತ್ವಿಕ ಮತ್ತು 
+                ರುಚಿಕರವಾದ ಊಟವನ್ನು ಅನುಭವಿಸಬಹುದು. ಪ್ರತಿಯೊಂದು ಪದಾರ್ಥವೂ 
+                ಸ್ವಚ್ಛತೆಯೊಂದಿಗೆ ತಯಾರಿಸಲಾಗುತ್ತದೆ.
+            </h4>
+        </section>
+
+        <aside class="aside">
+            <img src="/lavash-rolls-top-view-table.jpg" alt="Food image">
+        </aside>
+
+    </div>
+
+    <!--menu section-->
+    <section id="menu">
+        <h2>ನಮ್ಮ ಮೆನು</h2>
+        <div class="menu">
+            <div class="dish">
+                <img src="https://product-assets.faasos.io/eatsure_cms/production/21ba138f-ca35-4b8c-8779-80508d631dab.jpg" alt="Faasos near me Bengaluru" width="200" height="150">
+                <h3>ಪ್ಲೇಟ್ ಮೀಲ್ಸ್</h3>
+                <ul>
+                    <li>ಅನ್ನ, ಸಾಂಬಾರ್, ರಸಂ, ಪಲ್ಯ, ಪಾಯಸ, ಪಪ್ಪಡ</li>
+                </ul>
+                <p>₹120</p>
+                <button class="button" onclick="startOrder('ಮಸಾಲೆ ದೋಸೆ', 60)">
+    Order
+</button>
+                
+            </div>
+            <div class="dish">
+                <img src="https://media.istockphoto.com/id/1460788341/photo/south-indian-vegetarian-breakfast.jpg?s=612x612&w=0&k=20&c=afLT8Ojpb_btLetD0katsQJOedt-F6gMzWjKevXVMSI=" alt="Faasos near me Bengaluru" width="200" height="150">
+                <h3>ಮಸಾಲೆ ದೋಸೆ</h3>
+                <ul>
+                    <li>ಅಲೂ ಪಲ್ಯ, ಚಟ್ನಿ, ಸಾಂಬಾರ್</li>
+                </ul>
+                <p>₹60</p>
+                <button class="button" onclick="startOrder('ಮಸಾಲೆ ದೋಸೆ', 60)">
+    Order
+</button>
+                <but class="button" onclick="orderWhatsApp('ಮಸಾಲೆ ದೋಸೆ', '₹60')">Order2</button>
+            </div>
+            <div class="dish">
+                <img src="https://media.istockphoto.com/id/2159618247/photo/idli-vada-with-sambar.jpg?s=612x612&w=0&k=20&c=0HNP26WxESqfA3i3Xr1uTxxpKKYc69d9NRn9Dai4xok=" alt="Faasos near me Bengaluru" width="200" height="150">
+                <h3>ಇಡ್ಲಿ ವಡೆ</h3>
+                <ul>
+                    <li>2 ಇಡ್ಲಿ, 1 ವಡೆ, ಚಟ್ನಿ, ಸಾಂಬಾರ್</li>
+                </ul>
+                <p>₹40</p>
+                <button class="button" onclick="orderWhatsApp('ಇಡ್ಲಿ ವಡೆ', '₹40')">Order</button>
+            </div>
+            <div class="dish">
+                <img src="https://media.istockphoto.com/id/1328896578/photo/katlambe-chole.jpg?s=612x612&w=0&k=20&c=gAAMENy9FHaWLCvnMA0LWwF98jg9TubtkpRmgVQfdxA=" alt="Faasos near me Bengaluru" width="200" height="150">
+                <h3>ಬಿಸಿ ಬೇಳೆ ಬಾತ್</h3>
+                <ul>
+                    <li>ಬಿಸಿ ಬೇಳೆ ಬಾತ್, ಬೂಂದಿ, ಚಟ್ನಿ</li>
+                </ul>
+                <p>₹70</p>
+                <button class="button"onclick="orderWhatsApp('ಬಿಸಿ ಬೇಳೆ ಬಾತ್', '₹70')">Order</button>
+            </div>
+            <div class="dish">
+                <img src="https://media.istockphoto.com/id/1705124930/photo/food-photos-various-entrees-appetizers-deserts-etc.jpg?s=1024x1024&w=is&k=20&c=HSe97QhAKy2MLLVtJ4ur_sBNqWoM66bpTQ-t7BB7OSw=" alt="Faasos near me Bengaluru" width="200" height="150">
+                <h3>ಪೂರಿ ಸಾಗು</h3>
+                <ul>
+                    <li>4 ಪೂರಿ, ಸಾಗು, ಚಟ್ನಿ</li>
+                </ul>
+                <p>₹50</p>
+                <button class="button" onclick="orderWhatsApp('ಚಪೂರಿ ಸಾಗು', '₹50')">Order</button>
+            </div>
+            <div class="dish">
+                <img src="https://media.istockphoto.com/id/1837458851/photo/congee-with-pig-blood-curd.jpg?s=612x612&w=0&k=20&c=ROGsts1SKkYeVjiuk98wc-pNcmF-BNETy2wpumDbo7A=" alt="Faasos near me Bengaluru" width="200" height="150">
+                <h3>ಮೊಸರು ಅನ್ನ</h3>
+                <ul>
+                    <li>ಮೊಸರು ಅನ್ನ</li>
+                </ul>
+                <p>₹45</p>
+                <button class="button" onclick="orderWhatsApp('ಮೊಸರು ಅನ್ನ', '₹45')">Order</button>
+            </div>
+        </div>
+
+        <!--whatsapp floting-->
+        <a href="https://wa.me/+919000012345" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+            <img src="/SourceCodeForDevopsAssignment/whatsapp-icon-free-png.webp" width="60px">
+        </a>
+    </section>
+
+    <!--footer section-->
+    <footer>
+        <section id="contact">
+            <h2>ಸಂಪರ್ಕ</h2>
+            <p>📍 ಬೆಂಗಳೂರು, ಕರ್ನಾಟಕ</p>
+            <p>📞 <a href="tel:+91 90000 12345" style="color:white;">+91 90000 12345</a></p>
+            <p>✉️ <a href="mailto:ruchi@gmail.com" style="color:white;">ruchi@gmail.com</a></p>
+            <p>
+                <a href="https://instagram.com/ruchi" target="_blank" style="color:rgb(241, 1, 17);">Instagram</a> |
+                <a href="https://facebook.com/ruchi" target="_blank" style="color:rgb(27, 7, 241);">Facebook</a>
+            </p>
+        </section>
+        <p>© 2025 ರುಚಿ ಊಟದಮನೆ. ಎಲ್ಲಾ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.</p>
+    </footer>
+
+    <!--whats app sceript-->
+    <script>
+        function orderWhatsApp(item, price) {
+        const phoneNumber = "+919000012345"; // ನಿಮ್ಮ WhatsApp number (country code ಜೊತೆ)
+        const message = `ನಮಸ್ಕಾರ 🙏 ನಾನು ಈ item order ಮಾಡಲು ಬಯಸುತ್ತೇನೆ: 🍽️ Item: ${item} 💰 Price: ${price}
+        ದಯವಿಟ್ಟು order confirm ಮಾಡಿ.`;
+        const encodedMessage = encodeURIComponent(message);
+        const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(url, "_blank");
+        }
+    </script>
+
+    <!--order-->
+    <script>
+function startOrder(item, price) {
+
+    /* YOUR DETAILS */
+    const upiId = "yourupi@upi";          // YOUR UPI ID
+    const business = "Ruchi Ootadhamane"; // Shop Name
+    const whatsapp = "+919000012345";      // WhatsApp Number
+
+    /* 1️⃣ OPEN UPI PAYMENT */
+    const upiUrl = `upi://pay?pa=${upiId}&pn=${business}&am=${price}&cu=INR`;
+    window.location.href = upiUrl;
+
+    /* 2️⃣ AFTER PAYMENT → OPEN WHATSAPP */
+    setTimeout(() => {
+        const message = `ನಮಸ್ಕಾರ 🙏
+ನಾನು payment ಮಾಡಿದ್ದೇನೆ.
+
+🍽️ Item: ${item}
+💰 Amount: ₹${price}
+
+ದಯವಿಟ್ಟು order confirm ಮಾಡಿ 😊`;
+
+        const waUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
+        window.open(waUrl, "_blank");
+    }, 3000); // 3 seconds delay
+}
+</script>
+
+<div id="order">
+    <section id="order-section">
+    <h2>Order Summary</h2>
+
+    <input type="text" id="custName" placeholder="Your Name">
+    <input type="tel" id="custPhone" placeholder="Phone Number">
+
+    <label>Order Type</label>
+    <select id="orderType">
+        <option value="Pickup">🏠 Pickup</option>
+        <option value="Delivery">🚚 Delivery</option>
+    </select>
+
+    <ul id="cartList"></ul>
+    <p><strong>Total: ₹<span id="total">0</span></strong></p>
+
+    <label>Payment Screenshot</label>
+    <input type="file" id="paymentImg" accept="image/*">
+
+    <button class="button" onclick="payAndSend()">
+        Pay & Order
+    </button>
+</section>
+
+<script>
+let cart = [];
+let total = 0;
+
+/* SHOP TIME */
+function isShopOpen() {
+    const hour = new Date().getHours();
+    return hour >= 7 && hour <= 22;
+}
+
+/* ADD ITEM */
+function addToCart(item, price, qtyId) {
+    if (!isShopOpen()) {
+        alert("⛔ ಈಗ ಅಂಗಡಿ ಮುಚ್ಚಲಾಗಿದೆ");
+        return;
+    }
+
+    const qty = parseInt(document.getElementById(qtyId).value);
+    const cost = price * qty;
+
+    cart.push({ item, qty, cost });
+    total += cost;
+
+    renderCart();
+}
+
+/* REMOVE ITEM */
+function removeItem(index) {
+    total -= cart[index].cost;
+    cart.splice(index, 1);
+    renderCart();
+}
+
+/* RENDER CART */
+function renderCart() {
+    const list = document.getElementById("cartList");
+    list.innerHTML = "";
+
+    cart.forEach((i, index) => {
+        list.innerHTML += `
+        <li>
+            ${i.item} × ${i.qty} = ₹${i.cost}
+            <button onclick="removeItem(${index})">❌</button>
+        </li>`;
+    });
+
+    document.getElementById("total").innerText = total;
+}
+
+/* ORDER + PAYMENT */
+function payAndSend() {
+
+    if (cart.length === 0) {
+        alert("Cart empty");
+        return;
+    }
+
+    const name = custName.value;
+    const phone = custPhone.value;
+    const type = orderType.value;
+
+    if (!name || !phone) {
+        alert("Enter name & phone");
+        return;
+    }
+
+    const orderId = "RUC" + Date.now().toString().slice(-6);
+
+    /* UPI */
+    const upiId = "yourupi@upi";
+    const shop = "Ruchi Ootadhamane";
+    window.location.href =
+        `upi://pay?pa=${upiId}&pn=${shop}&am=${total}&cu=INR`;
+
+    /* WHATSAPP */
+    setTimeout(() => {
+        const items = cart.map(i =>
+            `• ${i.item} × ${i.qty} = ₹${i.cost}`
+        ).join("\n");
+
+        const message = `ನಮಸ್ಕಾರ 🙏
+🧾 Order ID: ${orderId}
+
+Name: ${name}
+Phone: ${phone}
+Order Type: ${type}
+
+Order:
+${items}
+
+Total: ₹${total}
+
+Payment screenshot attached 📸
+Please confirm order ✅`;
+
+        window.open(
+            `https://wa.me/919000012345?text=${encodeURIComponent(message)}`,
+            "_blank"
+        );
+    }, 3000);
+}
+</script>
+
+</div>
+
+</body>
+</html>
+
