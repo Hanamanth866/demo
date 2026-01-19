@@ -16,7 +16,7 @@
         <div class="logo - card">
         <img src="/Yellow_and_Brown_Kitchen_Food_Logo-removebg-preview.png" alt="ರುಚಿ ಊಟದಮನೆ ಲೋಗೋ" href="#menu">
         <div class="header1">
-        <h1>ರುಚಿ ಊಟದಮನೆ</h1>
+        <h1>ರುಚಿ ಊಟದಮನೆ  hanamanth</h1>
         <nav>
             <a href="#about">ಮನೆ ಬಗ್ಗೆ</a>
             <a href="#menu">ಮೆನು</a>
@@ -47,6 +47,11 @@
 
     <!--menu section-->
     <section id="menu">
+        <script>
+            function addToCart(item, price, qtyId) {
+            const qty = parseInt(document.getElementById(qtyId).value);// cart logic…
+            }
+        </script>
         <h2>ನಮ್ಮ ಮೆನು</h2>
         <div class="menu">
             <div class="dish">
@@ -56,10 +61,8 @@
                     <li>ಅನ್ನ, ಸಾಂಬಾರ್, ರಸಂ, ಪಲ್ಯ, ಪಾಯಸ, ಪಪ್ಪಡ</li>
                 </ul>
                 <p>₹120</p>
-                <button class="button" onclick="startOrder('ಮಸಾಲೆ ದೋಸೆ', 60)">
-    Order
-</button>
-                
+               <input type="number" id="qty-mills" min="1" value="1">
+               <button class="addToCart" onclick="addToCart('ಪ್ಲೇಟ್ ಮೀಲ್ಸ್', 120, 'qty-mills')">Add</button>
             </div>
             <div class="dish">
                 <img src="https://media.istockphoto.com/id/1460788341/photo/south-indian-vegetarian-breakfast.jpg?s=612x612&w=0&k=20&c=afLT8Ojpb_btLetD0katsQJOedt-F6gMzWjKevXVMSI=" alt="Faasos near me Bengaluru" width="200" height="150">
@@ -68,10 +71,8 @@
                     <li>ಅಲೂ ಪಲ್ಯ, ಚಟ್ನಿ, ಸಾಂಬಾರ್</li>
                 </ul>
                 <p>₹60</p>
-                <button class="button" onclick="startOrder('ಮಸಾಲೆ ದೋಸೆ', 60)">
-    Order
-</button>
-                <but class="button" onclick="orderWhatsApp('ಮಸಾಲೆ ದೋಸೆ', '₹60')">Order2</button>
+                <input type="number" id="qty-dosa" min="1" value="2">
+                <button class="addToCart" onclick="addToCart('ಮಸಾಲೆ ದೋಸೆ', 60, 'qty-dosa')">Add</button>
             </div>
             <div class="dish">
                 <img src="https://media.istockphoto.com/id/2159618247/photo/idli-vada-with-sambar.jpg?s=612x612&w=0&k=20&c=0HNP26WxESqfA3i3Xr1uTxxpKKYc69d9NRn9Dai4xok=" alt="Faasos near me Bengaluru" width="200" height="150">
@@ -80,7 +81,8 @@
                     <li>2 ಇಡ್ಲಿ, 1 ವಡೆ, ಚಟ್ನಿ, ಸಾಂಬಾರ್</li>
                 </ul>
                 <p>₹40</p>
-                <button class="button" onclick="orderWhatsApp('ಇಡ್ಲಿ ವಡೆ', '₹40')">Order</button>
+                <input type="number" id="qty-idli" min="1" value="3">
+                <button class="addToCart" onclick="addToCart('ಇಡ್ಲಿ ವಡೆ', 40, 'qty-idli')">Add</button>
             </div>
             <div class="dish">
                 <img src="https://media.istockphoto.com/id/1328896578/photo/katlambe-chole.jpg?s=612x612&w=0&k=20&c=gAAMENy9FHaWLCvnMA0LWwF98jg9TubtkpRmgVQfdxA=" alt="Faasos near me Bengaluru" width="200" height="150">
@@ -89,7 +91,8 @@
                     <li>ಬಿಸಿ ಬೇಳೆ ಬಾತ್, ಬೂಂದಿ, ಚಟ್ನಿ</li>
                 </ul>
                 <p>₹70</p>
-                <button class="button"onclick="orderWhatsApp('ಬಿಸಿ ಬೇಳೆ ಬಾತ್', '₹70')">Order</button>
+                <input type="number" id="qty-bath" min="1" value="4">
+                <button class="addToCart" onclick="addToCart('ಬಿಸಿ ಬೇಳೆ ಬಾತ್', 70, 'qty-bath')">Add</button>
             </div>
             <div class="dish">
                 <img src="https://media.istockphoto.com/id/1705124930/photo/food-photos-various-entrees-appetizers-deserts-etc.jpg?s=1024x1024&w=is&k=20&c=HSe97QhAKy2MLLVtJ4ur_sBNqWoM66bpTQ-t7BB7OSw=" alt="Faasos near me Bengaluru" width="200" height="150">
@@ -98,7 +101,8 @@
                     <li>4 ಪೂರಿ, ಸಾಗು, ಚಟ್ನಿ</li>
                 </ul>
                 <p>₹50</p>
-                <button class="button" onclick="orderWhatsApp('ಚಪೂರಿ ಸಾಗು', '₹50')">Order</button>
+                <input type="number" id="qty-puri" min="1" value="5">
+                <button class="addToCart" onclick="addToCart('ಪೂರಿ ಸಾಗು', 50, 'qty-puri')">Add</button>
             </div>
             <div class="dish">
                 <img src="https://media.istockphoto.com/id/1837458851/photo/congee-with-pig-blood-curd.jpg?s=612x612&w=0&k=20&c=ROGsts1SKkYeVjiuk98wc-pNcmF-BNETy2wpumDbo7A=" alt="Faasos near me Bengaluru" width="200" height="150">
@@ -107,9 +111,33 @@
                     <li>ಮೊಸರು ಅನ್ನ</li>
                 </ul>
                 <p>₹45</p>
-                <button class="button" onclick="orderWhatsApp('ಮೊಸರು ಅನ್ನ', '₹45')">Order</button>
+                <input type="number" id="qty-anna" min="1" value="6">
+                <button class="addToCart" onclick="addToCart('ಮೊಸರು ಅನ್ನ', 45, 'qty-anna')">Add</button>
             </div>
         </div>
+        <div id="order">
+    <section id="order-section">
+    <h2>Order Summary</h2>
+
+    <input type="text" id="custName" placeholder="Your Name">
+    <input type="tel" id="custPhone" placeholder="Phone Number">
+
+    <label>Order Type</label>
+    <select id="orderType">
+        <option value="Pickup">🏠 Pickup</option>
+        <option value="Delivery">🚚 Delivery</option>
+    </select>
+
+    <ul id="cartList"></ul>
+    <p><strong>Total: ₹<span id="total">0</span></strong></p>
+
+    <label>Payment Screenshot</label>
+    <input type="file" id="paymentImg" accept="image/*">
+
+    <button class="button" onclick="payAndSend()">
+        Pay & Order
+    </button>
+</div>
 
         <!--whatsapp floting-->
         <a href="https://wa.me/+919000012345" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
@@ -143,7 +171,7 @@
         window.open(url, "_blank");
         }
     </script>
-
+    <script src="/java.js"></script>
     <!--order-->
     <script>
 function startOrder(item, price) {
@@ -173,29 +201,7 @@ function startOrder(item, price) {
 }
 </script>
 
-<div id="order">
-    <section id="order-section">
-    <h2>Order Summary</h2>
 
-    <input type="text" id="custName" placeholder="Your Name">
-    <input type="tel" id="custPhone" placeholder="Phone Number">
-
-    <label>Order Type</label>
-    <select id="orderType">
-        <option value="Pickup">🏠 Pickup</option>
-        <option value="Delivery">🚚 Delivery</option>
-    </select>
-
-    <ul id="cartList"></ul>
-    <p><strong>Total: ₹<span id="total">0</span></strong></p>
-
-    <label>Payment Screenshot</label>
-    <input type="file" id="paymentImg" accept="image/*">
-
-    <button class="button" onclick="payAndSend()">
-        Pay & Order
-    </button>
-</section>
 
 <script>
 let cart = [];
