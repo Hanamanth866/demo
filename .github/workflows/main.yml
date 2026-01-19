@@ -15,11 +15,37 @@ jobs:
       - name: Deploy to EC2
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER_NAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}
+          host: ${{ 13.127.205.105 }}
+          username: ${{ i-0bdf3a26dcb9bbc06 }}
+          key: ${{ -----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEA9WherscjUiFsaiF4bjxvNxBmmi6fKwJztABRx/KNGgSpMeYi
+wMJqXmPiHO/GdEs5A1kOClAXInRB1OiBhD0JPRyg6HrJsrRlruedQoLGnYD7W1pT
+3WtWrgLGZDJ0wwcZCjK3kNhvoEI3WhgX9/e6hlugxQXMsAVzd+LiWrrHiKx8FAeI
+xfB2r+Runi188VobgBXFczRqplABQamsi1ZP+GEjRp1HFH+vO+ZuukL+wvh9e5SO
+9uChidDNoVWbiA6fAul38bzqb/wHCvSn6+jc8fyO9ov613K3n+Sw3+9p/Y+9Luk7
+keTgUpXjFJVjMusDsZS/iruBoCkhsResRIQpnwIDAQABAoIBAQCObp4NiMzKPVXk
+Hzr7mB3gcqdqM0b0On8W6NyOVQtqH2xn5q8i+3OrBwPUUaH4GzSi6cwJVkSnHZyb
+yrppGtfC3VvSsnlgO+2MXydZ0/ccsSCx+7ITH9p2Mmwc+V/lVbhFv/vkmInpFKV1
+p+g5ZlGe641a7KvJOdCzsz429JMckgSOpsHS8aNl1BjeEDanzLIAiF4S0sCo6Z4Q
+niBOOz/9RO42DC8M7DrGGa21p6+bhUklUmVdKJbioorTl6UlZxu3OkzzgNmqWl1E
+Iy2cHbLlYJmAtCy8rBPfs5hUwOg1mjw9MuH9EiTGhi8+Ie2t+3438nNZmcoGCOAK
+ZjKf/JEhAoGBAP8bU2nmuoZC87D9aaGtYtYh49dvUdUT8NzGQ/cOS8+qxcFCS3em
+6i9bxUZjFp7OEMjSVzyuZN2ztrBWjYoM//YuuazAi3AgO2U5gZICCgreJ/XbkluB
+pqTQ6d1xCUs2sxrDPwUppgUwOFSjVH3ti/l/NzszxU4hUFINxbpBJHPPAoGBAPZE
+WZTgRxelgwoAkfd+AyUAHdetEoAr9HlsZOpP4/gC5QJOOpw8nM3NpSWErk7ahej9
+4frksZtkfDEa7Q2QNzBA4zHx3ovIMNeQGG/hz+m2tq0PAsQR8ZIq0XKn8Xe9tl+z
+RjuaciRO5LBQVaIEC8BLkoy0gUxuseVjb0FvotExAoGABgeSUCV48SVx9xP2RDEB
+7ge9B+GEsKGZBs7U2mkHF7B0nh3ABOL4FAh6QDClXzmFogl+sFt63Nabkc1p6QJn
+plzyXIfsg8jvPnQ+gMH1lM4taZ0391u4IZsie+5pBtMTJqXIvol+eA7stetqWtOb
+hFkiaA7QMgmNiXLz4nQZtXcCgYBJMxfNgLyg8rl4h6LbhcE5hkdYjEErh+UrEmUM
+oKKKXZHklYwmVH3nTnEALegB2EJldtFs2f1QyxV/IxnDJlLBLQhbGCGmOuMJr/MT
+jnNWbNDvr76KuSqs371R70l+5g0HdSozHT1APZMMNVS+y6USi2QMHrswFNcb7+pp
+8NzcgQKBgFziz5UiKNpp+iJkdWrUojBra/1JWYKPcbmgcBxummhN77VPOvizBZHv
+DeH5Iwy+H8XyveddaHgaCpRoaCnNwR84JremiSsP2qye48SDmiNyNtMIAF97rBZY
+iD2JEgahN5A12k5QmLp4Yjl1CWrt33WLekXrg+TDjxJ36HpR2Mhn
+-----END RSA PRIVATE KEY----- }}
           script: |
-            cd /path/to/your/project
+            cd /var/www/demo/
             git pull origin main
             # Add commands to restart your app, for example:
             # npm install
